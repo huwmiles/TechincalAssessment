@@ -9,3 +9,7 @@ Sample data has been created for this project.
 - All end times are after their corresponding start time.
 - Each play lasts at most a few hours.
 - All of the plays happen within one calendar month.
+
+## Test Data Generator 
+
+This project also includes capability to generate sample data in the form of a JSON file. 
