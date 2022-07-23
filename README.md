@@ -2,8 +2,6 @@
 
 Calculate the maximum number of videos plays that were playing concurrently from a given JSON file. 
 
-Sample data has been created for this project. 
-
 ## Assumptions
 
 - All end times are after their corresponding start time.
