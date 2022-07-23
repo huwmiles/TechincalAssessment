@@ -38,7 +38,7 @@ max_end_date = max([item[1] for item in video_play_list])
 # Generate datetime list between the min and max dates in the sample data.
 datetime_list = generate_datetime_range(min_start_date, max_end_date)
 
-# Create list of datetimes and the count of active plays for each timestamp.
+# Create list of datetimes and count of active plays for each timestamp.
 results = []
 for x in datetime_list:
     count = 0
