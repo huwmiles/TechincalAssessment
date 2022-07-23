@@ -10,7 +10,8 @@ def open_json(file_path: str) -> dict:
 
 
 def generate_datetime_range(start_datetime: datetime, end_datetime: datetime) -> list:
-    """Generates a list of intergers representing seconds since the start of month (as we can assume all events happen in the same calendar month) between two datetimes with an interval of 1 second."""
+    """Generates a list of integers representing seconds since the start of month (as we can assume all events happen in the same calendar month) 
+        between two datetimes with an interval of 1 second."""
 
     month_start = start_datetime.replace(day=1, hour=0, minute=0, second=0)
     seconds = (start_datetime - month_start).total_seconds()
