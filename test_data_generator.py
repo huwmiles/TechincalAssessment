@@ -11,13 +11,13 @@ def random_date(start, end):
 
 # Define the start and end datetime 
 d1 = datetime.strptime('2022-07-01 00:00:00', "%Y-%m-%d %H:%M:%S")
-d2 = datetime.strptime('2022-07-10 00:00:00', "%Y-%m-%d %H:%M:%S")
+d2 = datetime.strptime('2022-07-31 00:00:00', "%Y-%m-%d %H:%M:%S")
 
 
 # Create dictionary structure from the random datetimes 
 emtpy_list = []
 column_names = ["startDate", "endDate"]
-for x in range(500):
+for x in range(100):
     start_date = random_date(d1, d2)
     # Assuming maximum video length of 5 hours, generate a random end datetime 
     end_date = start_date + timedelta(seconds=randrange(18000))
