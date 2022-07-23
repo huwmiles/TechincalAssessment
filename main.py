@@ -35,7 +35,7 @@ video_play_list = [
 min_start_date = min([item[0] for item in video_play_list])
 max_end_date = max([item[1] for item in video_play_list])
 
-# Generate datetime list between the min and max dates in the sample data.
+# Generate datetime list between the min and max dates in the data.
 datetime_list = generate_datetime_range(min_start_date, max_end_date)
 
 # Create list of datetimes and count of active plays for each timestamp.
@@ -44,8 +44,11 @@ for x in datetime_list:
     count = 0
     # Assuming a maximum video length of 5 hours, reduce video_play_list to within this range to optimise the next for loop.
     max_start_datetime = x + timedelta(hours=5)
+    min_start_datetime = x - timedelta(hours=5)
     reduced_video_play_list = [
-        item for item in video_play_list if item[0] <= max_start_datetime
+        item
+        for item in video_play_list
+        if item[0] <= max_start_datetime and item[0] >= min_start_datetime
     ]
 
     # For each video play, calculate if this it is active during the current datetime.
