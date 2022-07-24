@@ -10,4 +10,4 @@ Calculate the maximum number of videos plays that were playing concurrently from
 
 ## Test Data Generator 
 
-This project also includes capability to generate sample data in the form of a JSON file. 
+This project also includes capability to generate sample data in the form of a JSON file which has the option to choose the sample size and range of dates. This allowed the efficiency of the project to be tested with large datasets. 
